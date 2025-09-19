@@ -83,4 +83,38 @@ body {
   .scrollbar-hide::-webkit-scrollbar {
     display: none;  /* Chrome, Safari and Opera */
   }
+
+  .spark-animation {
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    background: #fbbf24;
+    border-radius: 50%;
+    animation: spark 1.5s ease-out infinite;
+  }
+
+  @keyframes spark {
+    0% {
+      transform: translate(0, 0) scale(1);
+      opacity: 1;
+    }
+    100% {
+      transform: translate(var(--x), var(--y)) scale(0);
+      opacity: 0;
+    }
+  }
+
+  .battery-glow {
+    filter: drop-shadow(0 0 8px rgba(251, 191, 36, 0.6));
+    animation: battery-pulse 2s ease-in-out infinite;
+  }
+
+  @keyframes battery-pulse {
+    0%, 100% {
+      filter: drop-shadow(0 0 8px rgba(251, 191, 36, 0.6));
+    }
+    50% {
+      filter: drop-shadow(0 0 16px rgba(251, 191, 36, 0.9));
+    }
+  }
 }
