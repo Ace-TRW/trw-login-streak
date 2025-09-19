@@ -2,7 +2,7 @@
 
 import { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence, useReducedMotion } from 'framer-motion';
-import { Flame, Lock, Gift, Check, Sparkles, Zap, TrendingUp, Trophy } from 'lucide-react';
+import { Flame, Lock, Gift, Check, Zap, TrendingUp, Trophy, Loader2 } from 'lucide-react';
 
 interface StreakData {
   currentStreak: number;
@@ -656,7 +656,7 @@ export default function StreakModal() {
                 transition={{ duration: 1, repeat: Infinity, ease: "linear" }}
                 className="inline-block"
               >
-                <Sparkles className="w-6 h-6" />
+                <Loader2 className="w-6 h-6" />
               </motion.div>
             ) : streakData.canCheckIn ? (
               <>

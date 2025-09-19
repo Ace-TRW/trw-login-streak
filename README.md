@@ -4,7 +4,7 @@ A gamified daily check-in system with Power Level rewards, built with Next.js, T
 
 🎮 **[Live Demo](https://trw-login-streak-io68wxqoi-or756s-projects.vercel.app)**
 
-## ✨ Features
+## Features
 
 ### 🎯 Core Functionality
 - **Daily Check-in System** - Claim Power Level rewards once every 24 hours
